@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// BASIC PAGES
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::view('/puntos', 'puntos')->name('puntos');
+Route::view('/locales', 'locales')->name('locales');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post("/productos", [ProductosController::class], 'store')->name('productos.store');

@@ -1,0 +1,149 @@
+@import "./_variables.css";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f4f4;
+}
+
+/* Boton compra */
+button {
+    width: 100%;
+    border: none;
+    background: var(--color-btn);
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.navegation {
+    display: flex;
+    padding: 4px 0;
+    margin: 5px 120px;
+    align-items: center;
+}
+
+.navegation a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.navegation a span {
+    font-size: 16px;
+}
+
+.navegation-left {
+    flex: 0.1;
+    width: 100%;
+}
+
+.navegation-left img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegation-center {
+    flex: 0.8;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    margin: 0 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.navegation-center a .navegation__menu i {
+    color: #000;
+}
+
+.navegation-center .navegation__menu span {
+    margin-left: 4px;
+    color: #000;
+    font-weight: 600;
+}
+
+.navegation-right {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.navegation-right i {
+    font-size: 20px;
+}
+
+.navegation-center a .active i,
+.navegation-center a .active span {
+    color: var(--color-primary);
+}
+
+.layout-content {
+    min-height: 90vh;
+}
+
+/* FOOTER */
+footer {
+    padding: 0 120px;
+    padding-bottom: 16px;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+footer .footer-top .info {
+    display: flex;
+    padding-top: 30px;
+}
+
+footer .footer-top .info .footer-top__left {
+    flex: 0.2;
+}
+
+.footer-top__left img {
+    width: 50%;
+    object-fit: cover;
+}
+
+footer .footer-top .info .footer-top__right {
+    flex: 0.8;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-top .info .footer-top__right h3 {
+    font-size: 16px;
+}
+
+footer .footer-top .info .footer-top__right .help-item .links {
+    display: grid;
+}
+
+footer .footer-top .info .footer-top__right .help-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer .footer-botton p {
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: center;
+}
