@@ -1,4 +1,4 @@
-@import "../css/_variables.css";
+@import "./_variables.css";
 
 .content-home .carousel-container {
     padding: 0 120px;
@@ -111,20 +111,6 @@
 
 .item-info p {
     font-size: 16px;
-}
-
-/* Boton compra */
-button {
-    width: 100%;
-    border: none;
-    background: var(--color-btn);
-    padding: 10px 0;
-    color: #fff;
-    border-radius: 6px;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 /* Sidebar */

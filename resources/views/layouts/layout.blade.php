@@ -56,17 +56,18 @@
           <span>Locales</span>
         </div>
       </a>
-      <a href="#">
-        <div class="navegation__menu {{ request()->routeIs('login') ? 'active' : '' }}">
-          <i class="far fa-user"></i>
-          <span>Ingresar</span>
-        </div>
-      </a>
+      <div class="navegation__menu">
+        <i class="far fa-user"></i>
+        <span data-toggle="modal" data-target="#exampleModalCenter">Ingresar</span>
+      </div>
+      
     </div>
     <div class="navegation-right">
       <i class="fas fa-shopping-cart"></i>
     </div>
   </nav>
+
+  @extends('../components.modalLogin')
 
   <!-- Content -->
   <div class="layout-content">
