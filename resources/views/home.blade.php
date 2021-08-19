@@ -83,11 +83,11 @@
               <div class="card-item">
                 <div class="item-content">
                   <div class="item-img">
-                    <img src={{ $promo['img'] }} alt="">
+                    <img src={{ $promo->img }} alt="">
                   </div>
                   <div class="item-info">
-                    <h4>{{ $promo['name'] }}</h4>
-                    <p>{{ $promo['description'] }}</p>
+                    <h4>{{ $promo->title }}</h4>
+                    <p>{{ $promo->info }}</p>
                   </div>
                 </div>
                 <div class="item-btn">
@@ -96,7 +96,6 @@
               </div>
             @empty
               <h4>No hay promociones</h4>
-
             @endforelse
           </div>
         </div>
@@ -105,10 +104,24 @@
             <h3>Pizzas</h3>
           </div>
           <div class="cards">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
+            @forelse($pizzas as $pizza)
+              <div class="card-item">
+                <div class="item-content">
+                  <div class="item-img">
+                    <img src={{ $pizza->img }} alt="">
+                  </div>
+                  <div class="item-info">
+                    <h4>{{ $pizza->title }}</h4>
+                    <p>{{ $pizza->info }}</p>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>Añadir al Carro</button>
+                </div>
+              </div>
+            @empty
+              <h4>No hay promociones</h4>
+            @endforelse
           </div>
         </div>
         <div class="data-item" id="acompañamientos">
@@ -116,10 +129,24 @@
             <h3>Acompañamientos</h3>
           </div>
           <div class="cards">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
+            @forelse($add as $item)
+              <div class="card-item">
+                <div class="item-content">
+                  <div class="item-img">
+                    <img src={{ $item->img }} alt="">
+                  </div>
+                  <div class="item-info">
+                    <h4>{{ $item->title }}</h4>
+                    <p>{{ $item->info }}</p>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>Añadir al Carro</button>
+                </div>
+              </div>
+            @empty
+              <h4>No hay promociones</h4>
+            @endforelse
           </div>
         </div>
         <div class="data-item" id="bebidas">
@@ -127,10 +154,24 @@
             <h3>Bebidas</h3>
           </div>
           <div class="cards">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
+            @forelse($bebidas as $bebida)
+              <div class="card-item">
+                <div class="item-content">
+                  <div class="item-img">
+                    <img src={{ $bebida->img }} alt="">
+                  </div>
+                  <div class="item-info">
+                    <h4>{{ $bebida->title }}</h4>
+                    <p>{{ $bebida->info }}</p>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>Añadir al Carro</button>
+                </div>
+              </div>
+            @empty
+              <h4>No hay promociones</h4>
+            @endforelse
           </div>
         </div>
         <div class="data-item" id="postres">
@@ -138,10 +179,24 @@
             <h3>Postres</h3>
           </div>
           <div class="cards">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
+            @forelse($postres as $postre)
+              <div class="card-item">
+                <div class="item-content">
+                  <div class="item-img">
+                    <img src={{ $postre->img }} alt="">
+                  </div>
+                  <div class="item-info">
+                    <h4>{{ $postre->title }}</h4>
+                    <p>{{ $postre->info }}</p>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>Añadir al Carro</button>
+                </div>
+              </div>
+            @empty
+              <h4>No hay promociones</h4>
+            @endforelse
           </div>
         </div>
         <div class="data-item" id="extras">
@@ -149,10 +204,24 @@
             <h3>Extras</h3>
           </div>
           <div class="cards">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus molestiae impedit perferendis amet numquam quas omnis nisi quibusdam repudiandae harum architecto cumque, explicabo, molestias sed ratione iste nam? Laudantium, blanditiis.</p>
+            @forelse($extras as $extra)
+              <div class="card-item">
+                <div class="item-content">
+                  <div class="item-img">
+                    <img src={{ $extra->img }} alt="">
+                  </div>
+                  <div class="item-info">
+                    <h4>{{ $extra->title }}</h4>
+                    <p>{{ $extra->info }}</p>
+                  </div>
+                </div>
+                <div class="item-btn">
+                  <button>Añadir al Carro</button>
+                </div>
+              </div>
+            @empty
+              <h4>No hay promociones</h4>
+            @endforelse
           </div>
         </div>
       </div>

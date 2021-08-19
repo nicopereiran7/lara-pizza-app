@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,6 @@ use App\Http\Controllers\HomeController;
 // BASIC PAGES
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/puntos', 'puntos')->name('puntos');
-Route::view('/locales', 'locales')->name('puntos');
+Route::view('/locales', 'locales')->name('locales');
+
+Route::post("/productos", [ProductosController::class], 'store')->name('productos.store');
