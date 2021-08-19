@@ -1,3 +1,7 @@
+## PREVIEW
+![lara-pizza-app01](https://user-images.githubusercontent.com/37352018/130114975-6b2880ca-f5ac-467e-9947-033df24247d2.PNG)
+![lara-pizza-app02](https://user-images.githubusercontent.com/37352018/130115018-614fff0d-2b21-4c8b-8736-183151dd1a7f.PNG)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
