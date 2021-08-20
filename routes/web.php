@@ -1,8 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,8 @@ Route::view('/puntos', 'puntos')->name('puntos');
 Route::view('/locales', 'locales')->name('locales');
 
 Route::post("/productos", [ProductosController::class], 'store')->name('productos.store');
+
+Route::post("/login", [AuthController::class, 'login'])->name('login');
+Route::post("/logout", [AuthController::class, 'logout']);
+
+Route::view('/perfil', 'perfil')->middleware('auth')->name('perfil');

@@ -6,7 +6,7 @@
         <div class="form-image">
           <img src="https://www.papajohns.cl/static/media/bg_login_food.2f4efa9b.png" alt=""/>
         </div>
-        <form method="POST">
+        <form action={{ route('login') }} method="POST">
           @csrf
           <div class="input">
             <div class="label-name">
@@ -14,7 +14,7 @@
               <label for="email">Email</label>
             </div>
             <div class="input-form">
-              <input type="text">
+              <input type="email" name="email">
             </div>
           </div>
           <div class="input">
@@ -23,10 +23,10 @@
               <label for="email">Contraseña</label>
             </div>
             <div class="input-form">
-              <input type="text">
+              <input type="password" name="password">
             </div>
           </div>
-          <button>INGRESAR</button>
+          <button type="submit">INGRESAR</button>
           <div>
             <p>¿Aun no tienes cuenta?</p>
           </div>
