@@ -1,17 +1,19 @@
 @extends('layouts.layout')
 
 @section('css')
-  <link rel="stylesheet" href="/css/perfil.css">
+  <link rel="stylesheet" href="{{ asset('/css/perfil.css') }}">
 @endsection
 
 @section('title', 'Tu Perfil | Papa Johns')
 
 @section('content')
     <div class="mi-perfil">
-        <div class="left">
-            <h3>Left</h3>
+        @if (Auth::user()->isAdmin)
+        <div class="admin">
+            <a href="/admin">Ir al Panel de Administracion</a>
         </div>
-        <div class="right">
+        @endif
+        <div class="content">
             <div class="cards">
                 <div class="cards-item">
                     <div class="card__header">

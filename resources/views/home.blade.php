@@ -241,15 +241,4 @@
     </div>
   </div>
 </div>
-<script>
-  function scrollSection(element) {
-    if ($(element.id).length) {
-		var getOffset = $(element.id).offset().top;
-		var targetDistance = 20;
-		$('html,body').animate({
-			scrollTop: getOffset - targetDistance
-		}, 500);
-	}
-  }
-</script>
 @endsection

@@ -85,6 +85,10 @@ body {
     font-weight: 600;
 }
 
+.navegation-center .navegation__menu span:hover {
+    cursor: pointer;
+}
+
 .navegation-right {
     flex: 0.1;
     display: flex;

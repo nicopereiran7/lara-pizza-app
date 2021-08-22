@@ -1,15 +1,6 @@
 .mi-perfil {
     margin-top: 20px;
     padding: 0 120px;
-    display: flex;
-}
-
-.mi-perfil .left {
-    flex: 0.15;
-}
-
-.mi-perfil .right {
-    flex: 0.85;
 }
 
 .cards {

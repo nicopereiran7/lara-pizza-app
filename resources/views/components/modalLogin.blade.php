@@ -1,3 +1,5 @@
+
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -26,21 +28,17 @@
               <input type="password" name="password">
             </div>
           </div>
-          <button type="submit">INGRESAR</button>
-          <div>
-            <p>¿Aun no tienes cuenta?</p>
+          <button type="submit" class="cart">INGRESAR</button>
+          <div class="register">
+            <p>¿Aun no tienes cuenta? <a href="{{ route('registrar') }}"><span>Registrate</span></a></p>
           </div>
         </form>
       </div>
-      {{-- <button type="button" class="close-edit" data-dismiss="modal" aria-label="Close">
-        <i class="fas fa-times"></i>
-      </button> --}}
     </div>
   </div>
 </div>
 
 <style>
-  @import "./_variables.css";
   /* modal */
 @media (min-width: 576px) {
     .modal-dialog {
@@ -80,5 +78,18 @@
     padding: 4px;
 }
 
+form .register p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+form .register p span {
+  color: #01be7f;
+}
+
+form .register p span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 </style>

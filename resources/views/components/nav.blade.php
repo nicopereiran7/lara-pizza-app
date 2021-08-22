@@ -42,8 +42,6 @@
         <span data-toggle="modal" data-target="#exampleModalCenter">Ingresar</span>
       </div>
     @endauth
-    
-    
   </div>
   <div class="navegation-right">
     <i class="fas fa-shopping-cart"></i>
