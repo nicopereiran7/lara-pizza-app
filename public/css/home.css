@@ -72,13 +72,6 @@
     font-size: 20px;
 }
 
-.principal-container__left .data .data-item .separator {
-    background-color: #d6d6d6;
-    border: 0;
-    flex-grow: 1;
-    height: 1px;
-}
-
 .principal-container .data .data-item .cards {
     display: grid;
     grid-gap: 20px;

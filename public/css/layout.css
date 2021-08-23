@@ -15,7 +15,7 @@ body {
 }
 
 /* Boton compra */
-button {
+.cart {
     width: 100%;
     border: none;
     background: var(--color-btn);
@@ -24,8 +24,16 @@ button {
     border-radius: 6px;
 }
 
-button:hover {
+.cart:hover {
     cursor: pointer;
+}
+
+.separator {
+    background-color: #d6d6d6;
+    border: 0;
+    flex-grow: 1;
+    height: 1px;
+    margin: 10px 0;
 }
 
 .navegation {
@@ -69,12 +77,19 @@ button:hover {
 
 .navegation-center a .navegation__menu i {
     color: #000;
+    transition: 0.2s ease all;
 }
 
 .navegation-center .navegation__menu span {
     margin-left: 4px;
     color: #000;
     font-weight: 600;
+    transition: 0.2s ease all;
+}
+
+.navegation-center .navegation__menu span:hover {
+    cursor: pointer;
+    color: var(--color-primary);
 }
 
 .navegation-right {
@@ -146,4 +161,22 @@ footer .footer-botton p {
     margin-bottom: 0;
     font-size: 12px;
     text-align: center;
+}
+
+footer .footer-top .social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+footer .footer-top .social-networks h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 4px;
+}
+
+footer .footer-top .social-networks i {
+    margin-left: 8px;
 }

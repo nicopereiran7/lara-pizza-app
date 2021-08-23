@@ -1,0 +1,67 @@
+.mi-perfil {
+    margin-top: 20px;
+    padding: 0 120px;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 500px) {
+    .mi-perfil__cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.cards-item {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+}
+
+.cards-item h2 {
+    font-size: 16px;
+    color: inherit;
+    font-weight: 600;
+}
+
+.card__header {
+    display: flex;
+}
+
+.card__header h2 {
+    margin-left: 6px;
+}
+
+.card__content .data {
+    display: flex;
+}
+
+.card__content .data p {
+    color: #717171;
+}
+
+.card__content form a {
+    color: #717171;
+    text-decoration: none;
+}
+
+.cards .item-edit {
+    background-image: url("https://www.papajohns.cl/static/media/img_profile_stars_bg.f83ff133.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .item-edit p {
+    color: #717171;
+    font-size: 20px;
+    font-weight: 700;
+}

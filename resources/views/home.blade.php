@@ -91,7 +91,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty
@@ -102,6 +102,7 @@
         <div class="data-item" id="pizzas">
           <div class="title">
             <h3>Pizzas</h3>
+            <hr class="separator">
           </div>
           <div class="cards">
             @forelse($pizzas as $pizza)
@@ -116,7 +117,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty
@@ -127,6 +128,7 @@
         <div class="data-item" id="acompañamientos">
           <div class="title">
             <h3>Acompañamientos</h3>
+            <hr class="separator">
           </div>
           <div class="cards">
             @forelse($add as $item)
@@ -141,7 +143,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty
@@ -152,6 +154,7 @@
         <div class="data-item" id="bebidas">
           <div class="title">
             <h3>Bebidas</h3>
+            <hr class="separator">
           </div>
           <div class="cards">
             @forelse($bebidas as $bebida)
@@ -166,7 +169,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty
@@ -177,6 +180,7 @@
         <div class="data-item" id="postres">
           <div class="title">
             <h3>Postres</h3>
+            <hr class="separator">
           </div>
           <div class="cards">
             @forelse($postres as $postre)
@@ -191,7 +195,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty
@@ -202,6 +206,7 @@
         <div class="data-item" id="extras">
           <div class="title">
             <h3>Extras</h3>
+            <hr class="separator">
           </div>
           <div class="cards">
             @forelse($extras as $extra)
@@ -216,7 +221,7 @@
                   </div>
                 </div>
                 <div class="item-btn">
-                  <button>Añadir al Carro</button>
+                  <button class="cart">Añadir al Carro</button>
                 </div>
               </div>
             @empty

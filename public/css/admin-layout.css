@@ -1,0 +1,46 @@
+@import "./_variables.css";
+
+.admin-layout {
+    background-color: #fff;
+    min-height: 90vh;
+}
+
+.admin-data {
+    display: flex;
+}
+
+.admin__menu-side {
+    flex: 0.17;
+    min-height: 84vh;
+    background-color: var(--color-primary);
+}
+
+.admin__content {
+    flex: 0.83;
+    margin: 0 20px;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-item span {
+    margin-left: 10px;
+}
+
+.admin__menu-side .link {
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    transition: 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    color: #000;
+    background-color: rgb(238, 238, 238);
+}
+
+.active-admin {
+    color: #000;
+    background-color: rgb(238, 238, 238);
+}
