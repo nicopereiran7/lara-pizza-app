@@ -37,5 +37,6 @@ Route::view('/perfil', 'perfil')->middleware('auth')->name('perfil');
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
   Route::get('/', [ShowAdmin::class, 'index'])->name('admin.home');
   Route::get('/usuarios', [ShowAdmin::class, 'users'])->name('admin.users');
-
+  Route::get('/productos', [ShowAdmin::class, 'products'])->name('admin.products');
+  Route::get('/promociones', [ShowAdmin::class, 'promo'])->name('admin.promo');
 });
